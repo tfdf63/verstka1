@@ -206,9 +206,10 @@ body {
     margin: 0 auto;
     width: 700px;
     height: 800px;
-    background-color: rgb(29, 139, 139);
+    /* background-color: rgb(29, 139, 139); */
 }
 .advant__header {
+    color: rgb(128, 128, 128);
 }
 .advant__title {
     margin: 0 auto;
@@ -228,13 +229,26 @@ body {
 }
 .advant__row {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .advant_item {
+    width: 100px;
+    padding: 10px;
     text-align: left;
     font-size: 8px;
     line-height: 1.4;
+    border: 1px solid  rgb(212, 224, 224, 0.4);
+    /* color: rgb(128, 128, 128); */
+    /* background-color: blueviolet; */
 }
 .advant__text {
+    font-size: 10px;
+    font-weight: 500px;
 }
 .advant__subtext {
+    margin-top: 6px;
+    font-size: 8px;
+    font-weight: light;
+    line-height: 1.4;
 }
