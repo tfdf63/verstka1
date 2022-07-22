@@ -35,8 +35,15 @@ body {
 .header__logo {
     width: 20px;
 }
-.header__title {
+
+.title {
     font-size: 22px;
+    margin-left: 4px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.header__title {
+    /* font-size: 22px; */
     margin-left: 4px;
     font-weight: 400;
     text-transform: uppercase;
@@ -233,7 +240,7 @@ body {
     justify-content: space-between;
     width: 100%;
 }
-.advant_item {
+.advant__item {
     width: 120px;
     margin:  0px 0px 40px 0px;
     padding: 20px;
@@ -263,14 +270,27 @@ body {
 .about__row {
     display: flex;
     justify-content: space-around;
+    /* height: 370px; */
+    /* background-color:aqua; */
 }
 .about__item {
-    margin-top: 35px;
-    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 270px;
+    width: 60%;
+    margin: 20px auto;
+    padding: 0 20px;
+    /* background-color:red; */
+}
+.about__item:last-child {
+
 }
 .about__img {
-    width: 300px;
-    height: 300px;
+    margin: 20px 20px;
+    /* padding: 0 20px; */
+    width: 270px;
+    height: 270px;
     background-color: rgba(164, 173, 173, 0.8);
     border-radius:50%;
 }
@@ -344,6 +364,9 @@ body {
     text-align: left;
     line-height: 1;
     border: 1px solid  rgb(212, 224, 224, 0.4);
+}
+.feature__item:last-child {
+    margin: 0 0 0 0;
 }
 .feature__header {
     font-size: 12px;
